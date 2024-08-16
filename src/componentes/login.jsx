@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Registro = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
@@ -14,11 +14,7 @@ const Registro = () => {
       return;
     }
 
-    if (
-      email === "correo@gmail.com" &&
-      password === "a123456" &&
-      password2 === "a123456"
-    ) {
+    if (email === "correo@gmail.com" && password === "a123456") {
       alert("Inicio de sesión exitoso");
       setError("");
     } else {
@@ -50,16 +46,6 @@ const Registro = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div>
-          <label htmlFor="">Repita contraseña</label>
-          <input
-            type="password"
-            name="password2"
-            className="form-control"
-            value={password2}
-            onChange={(e) => setPassword2(e.target.value)}
-          />
-        </div>
         <button type="submit" className="btn btn-primary">
           Login
         </button>
@@ -68,4 +54,4 @@ const Registro = () => {
   );
 };
 
-export default Registro;
+export default Login;

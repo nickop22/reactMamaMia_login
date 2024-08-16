@@ -3,6 +3,7 @@ import Home from "./componentes/Home.jsx";
 import Footer from "./componentes/Footer.jsx";
 import "./App.css";
 import Registro from "./componentes/Registro.jsx";
+import Login from "./componentes/login.jsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navegacion />
       <Home />
       <Registro />
+      <Login />
       <Footer />
     </>
   );
